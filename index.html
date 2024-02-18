@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackgroundChanger</title>
+</head>
+<body id="body" onload="onstart()">
+    <div id="backgroundchanger">
+        <input type="color" id="colorinput">
+        <button onclick="setbackground()">Save BackgroundColor</button>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function setbackground(){
+        inputcolor = document.getElementById("colorinput").value
+        localStorage.setItem('backgroundColor', inputcolor)
+        document.getElementById("body").style.backgroundColor= inputcolor;
+    }
+
+    function onstart(){
+        savedbackground = localStorage.getItem('backgroundColor')
+        document.getElementById("body").style.backgroundColor= savedbackground;
+    }
+</script>
+
+<style>
+    #backgroundchanger{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(255, 255, 255);
+    }
+</style>

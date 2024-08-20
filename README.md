@@ -4,7 +4,7 @@
 With this background changer template, users can select a custom background color, which is then stored in the browser's local storage for persistent usage.
 
 
-![Logo](https://skynethub.net/simple-web-background-changer.png)
+![Logo](http://skynethub.net/simple-web-background-changer.png)
 
 
 ## Getting Started 🚀
